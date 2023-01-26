@@ -1,41 +1,50 @@
 package c322.homework.homework2;
-import java.util.Random;
+/*
+Code written by Zachary Orth
+Homework 2
+C322
+1 / 26 / 2023
+ */
+import java.util.ArrayList;
+import java.util.List;
 
-public class WeatherData {
-    float tempLimit = 100;
-    double humLimit = 100.0;
-    int lbPress = 100;
-    int upPress = 950;
+public class WeatherData implements Subject {
 
-    Random randPress = new Random();
-    Random randTemp = new Random();
-    Random randHumid = new Random();
-    float useRandTemp = randTemp.nextFloat(tempLimit);
-    double useRandHum = randHumid.nextDouble(humLimit);
-    int useRandPress = randPress.nextInt(upPress) + lbPress;
+    private float temp, humid, press;
+    private List<Obv> observers;
 
-    // These are getter methods that need to be implemented
-    public float getTemperature() {
-        return useRandTemp;
+    // Here are all the methods we need for updating the weather, removing and adding obvs
+    // etc.
+
+    public WeatherData(){
+        observers = new ArrayList<Obv>();
     }
 
-    public double getHumidity() {
-        return useRandHum;
+    @Override
+    public void registerObv(Obv o) {
+        observers.add(o);
     }
 
-    public int getPressure() {
-        return useRandPress;
+    @Override
+    public void removeObv(Obv o) {
+        observers.remove(o);
     }
 
-    public void measurementsChanged() {
+    @Override
+    public void notifyObv() {
+        for (Obv observer : observers){
+            observer.update(temp, humid, press);
 
+        }
     }
-
-    public void setMeasurements(float useRandTemp, double useRandHum, int useRandPress) {
-        this.useRandHum = useRandHum;
-        this.useRandTemp = useRandTemp;
-        this.useRandPress = useRandPress;
-
+    public void measurementsChanged(){
+        notifyObv();
+    }
+    public void setMeasurements(float temp, float humid, float press){
+        this.temp = temp;
+        this.humid = humid;
+        this.press = press;
+        measurementsChanged();
     }
 }
 
