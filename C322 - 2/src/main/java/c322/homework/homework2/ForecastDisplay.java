@@ -4,8 +4,8 @@ public class ForecastDisplay implements Obv, DisplayMaker {
     private float temp, humid, press;
     private float currPress = 30.01f;
     private float lastPress;
-    private float currTemp = 50.0f;
-    private float lastTemp;
+    private float currHumid = 50.0f;
+    private float lastHumid;
     private WeatherData weatherdata;
 
     public ForecastDisplay(WeatherData weatherdata) {
@@ -17,6 +17,8 @@ public class ForecastDisplay implements Obv, DisplayMaker {
      public void update(float temp, float humid, float press) {
         lastPress = currPress;
         currPress = press;
+        lastHumid = currHumid;
+        currHumid = temp;
         display();
     }
 
@@ -31,6 +33,16 @@ public class ForecastDisplay implements Obv, DisplayMaker {
 
         } else if (currPress < lastPress){
             System.out.println("Weather will be cooler, and potentially rainy");
+        }
+        if (currHumid > lastHumid ){
+
+            System.out.println("Looks like we're hitting Florida levels of humidity out there !");
+        }else if (currHumid < lastHumid){
+
+            System.out.println("Humidity is going down. Consider turning on those nightly humidifiers!");
+
+        }else if (currHumid == lastHumid){
+            System.out.println("Humidity is looking to be about the same level as it wa before . . . ");
         }
     }
 }

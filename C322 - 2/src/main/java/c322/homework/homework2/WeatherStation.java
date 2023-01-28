@@ -16,14 +16,14 @@ public class WeatherStation {
 
         WeatherData wd = new WeatherData();
 
-        CurrentConditionsDisplay currDisplay = new CurrentConditionsDisplay (wd);
+        CurrentConditionsDisplay currDisplay = new CurrentConditionsDisplay(wd);
         ForecastDisplay forDisplay = new ForecastDisplay(wd);
-        StatisticsDisplay statDisplay =  new StatisticsDisplay(wd);
+        StatisticsDisplay statDisplay = new StatisticsDisplay(wd);
 
-        wd.setMeasurements(76, 34, 75);
-        wd.setMeasurements(11, 23, 50);
-        wd.setMeasurements(randTemp, randHumid, randPress);
 
+            wd.setMeasurements(76, 34, 75);
+            wd.setMeasurements(11, 23, 50);
+            wd.setMeasurements(randTemp, randHumid, randPress);
     }
 
 }

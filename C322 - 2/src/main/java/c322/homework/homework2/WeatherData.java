@@ -1,6 +1,6 @@
 package c322.homework.homework2;
 /*
-Code written by Zachary Orth
+Zachary Orth
 Homework 2
 C322
 1 / 26 / 2023
