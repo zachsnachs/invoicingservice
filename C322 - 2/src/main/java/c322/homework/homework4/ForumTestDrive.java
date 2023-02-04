@@ -6,10 +6,8 @@ public class ForumTestDrive {
 
         Student student = new Student(forum);
 
-        String name = "James";
-        String body =  "Here's to a nice Saturday!";
-        String header = "Hello, Everyone!";
 
-        forum.setForum(name, header, body);
+        forum.setForum("James,: ", "Hello!: ",
+                "Have a nice day!");
     }
 }

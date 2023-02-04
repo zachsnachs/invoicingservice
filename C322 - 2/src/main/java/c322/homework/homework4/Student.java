@@ -3,7 +3,9 @@ package c322.homework.homework4;
 import javax.naming.Name;
 
 public class Student implements Observer, Display{
-    private String name, header, body;
+    private String name;
+    private String header;
+    private String body;
     private Forum forum;
 
     public Student(Forum forum){

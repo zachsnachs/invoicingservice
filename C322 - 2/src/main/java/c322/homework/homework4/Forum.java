@@ -5,7 +5,9 @@ import java.util.List;
 
 public class Forum implements Subject {
     private List<Observer> observers;
-    private String name, header, body;
+    private String name;
+    private String body;
+    private String header;
 
     public Forum (){
         observers = new ArrayList<Observer>();
@@ -17,6 +19,7 @@ public class Forum implements Subject {
 
     @Override
     public void removeObserver(Observer o) {
+        observers.remove(o);
 
     }
 
@@ -33,5 +36,6 @@ public class Forum implements Subject {
         this.name = name;
         this.header = header;
         this.body = body;
+        forumChanged();
     }
 }
