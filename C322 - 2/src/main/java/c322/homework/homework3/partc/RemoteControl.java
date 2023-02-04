@@ -11,7 +11,7 @@ public class RemoteControl {
 
         // Lambda functions seem to make this less tedious
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 2; i++) {
             onCommands[i] = () -> {};
             offCommands[i] = () -> {};
         }
