@@ -29,5 +29,9 @@ public class Forum implements Subject {
         notifyObserver();
     }
 
-    public void setForum()
+    public void setForum(String name, String header, String body){
+        this.name = name;
+        this.header = header;
+        this.body = body;
+    }
 }
