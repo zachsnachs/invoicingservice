@@ -1,4 +1,4 @@
-package c322.homework.homework4;
+package c322.homework.homework4.parta;
 
 public class ForumTestDrive {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package c322.homework.homework4;
-
-import javax.naming.Name;
+package c322.homework.homework4.parta;
 
 public class Student implements Observer, Display{
     private String name;
