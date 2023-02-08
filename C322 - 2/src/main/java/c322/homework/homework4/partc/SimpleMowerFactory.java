@@ -1,8 +1,8 @@
 package c322.homework.homework4.partc;
 
-public class SimpleMowerFactory {
+public class ConcreteMowerFactory extends MowerFactory {
 
-    public Mower createMower(String type) {
+    public Mower getMowerType(String type) {
         Mower mower = null;
 
         if (type.equals("push")){
@@ -14,5 +14,7 @@ public class SimpleMowerFactory {
 
         return mower;
     }
+
+
 
 }
