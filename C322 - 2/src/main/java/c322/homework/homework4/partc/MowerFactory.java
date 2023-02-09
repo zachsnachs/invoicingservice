@@ -1,13 +1,15 @@
 package c322.homework.homework4.partc;
 
-abstract class MowerFactory {
-    SimpleMowerFactory mowerFactory;
+public abstract class MowerFactory {
 
-    public MowerFactory(SimpleMowerFactory mowerFactory){
-        this.mowerFactory = mowerFactory;
+    protected abstract Mower makeMower(String type);
+
+    public Mower makeMower(String type){
+        Mower mower = makeMower(type);
+
+
+        return mower;
     }
-
-    abstract Mower getMowerType(string mowerType);
 
 
 }
