@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="c322" />
+        <module name="C322 - 2" />
       </profile>
     </annotationProcessing>
   </component>
