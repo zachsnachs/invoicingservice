@@ -20,9 +20,8 @@ public class RemoteControl {
     public void setCommand (int slot, Command onCommand, Command offCommand){
         onCommands[slot] = onCommand;
         offCommands[slot] = offCommand;
-        Command[] allOn = {lightOn, stereoOn, CeilingFanOn}
+        //Command[] allOn = {lightOn, stereoOn, CeilingFanOn}
 
-        // Macro commands
 
     }
 

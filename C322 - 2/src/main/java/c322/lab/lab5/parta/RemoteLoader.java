@@ -9,7 +9,7 @@ public class RemoteLoader {
         CeilingFan ceilingFan= new CeilingFan("Basement");
         Stereo stereo = new Stereo("Bedroom");
 
-        lightCommand lightOn  = newLightCommand(light);
+        //lightCommand lightOn  = newLightCommand(light);
 
         remoteControl.setCommand(0, sunRoomLight::on, ceilingFan::on);
         remoteControl.setCommand(1, sunRoomLight::off, sunRoomLight::off);
