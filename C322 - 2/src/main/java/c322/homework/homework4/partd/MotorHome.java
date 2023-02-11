@@ -13,16 +13,18 @@ public abstract class MotorHome {
 
   abstract void produce();
     void setName(String name) {
+
         this.name = name;
     }
 
     String getName() {
+
         return name;
     }
 
     public String toString() {
         StringBuffer result = new StringBuffer();
-        result.append("---- " + name + " ----\n");
+        result.append(" . . . . " + name + " . . .\n");
         if (frame != null) {
             result.append(frame);
             result.append("\n");

@@ -1,6 +1,6 @@
 package c322.homework.homework4.partd;
 
-public class PartCEngine implements Engine{
+public class TypeCEngine implements Engine{
 
     public String toString() {
         return "Part C engine";

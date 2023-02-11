@@ -3,7 +3,7 @@ package c322.homework.homework4.partd;
 public class TypeAFactory extends MotorHomeAbstractFactory {
 
     @Override
-    MotorHome createMotorHome(String item) {
+        MotorHome createMotorHome(String item) {
         MotorHome motorHome = null;
         PartFactory partFactory = new TypeAPartFactory();
 

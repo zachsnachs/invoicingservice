@@ -8,17 +8,17 @@ public class TypeBPartFactory implements PartFactory {
 
     @Override
     public Style createStyle() {
-        return new PartBStyle();
+        return new TypeBStyle();
     }
 
     @Override
     public Frame createFrame() {
-        return new PartBFrame();
+        return new TypeBFrame();
     }
 
     @Override
     public Engine createEngine() {
-        return new PartBEngine();
+        return new TypeBEngine();
     }
 
 

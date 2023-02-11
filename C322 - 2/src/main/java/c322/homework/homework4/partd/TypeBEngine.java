@@ -1,7 +1,9 @@
 package c322.homework.homework4.partd;
 
-public class PartAFrame implements Frame {
+public class TypeBEngine implements Engine{
+
     public String toString() {
-        return "Part A frame";
+        return "Part B engine";
     }
 }
+

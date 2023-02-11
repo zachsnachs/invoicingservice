@@ -1,7 +1,8 @@
 package c322.homework.homework4.partd;
 
-public class PartCStyle implements Style{
+public class TypeBFrame implements Frame {
     public String toString() {
-        return "Part C style";
+        return "Part B frame";
     }
+
 }

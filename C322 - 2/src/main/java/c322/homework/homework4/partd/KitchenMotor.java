@@ -1,9 +1,9 @@
 package c322.homework.homework4.partd;
 
-public class StyleMotor extends MotorHome {
+public class KitchenMotor extends MotorHome {
     PartFactory partFactory;
-    public StyleMotor(PartFactory partFactory) {
-       this.partFactory = partFactory;
+    public KitchenMotor(PartFactory partFactory) {
+        this.partFactory = partFactory;
     }
 
     @Override
@@ -13,7 +13,5 @@ public class StyleMotor extends MotorHome {
         style = partFactory.createStyle();
         kitchen = partFactory.createKitchen();
         frame = partFactory.createFrame();
-
-
     }
 }

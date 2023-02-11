@@ -8,17 +8,17 @@ public class TypeCPartFactory implements PartFactory {
 
     @Override
     public Style createStyle() {
-        return new PartCStyle();
+        return new TypeCStyle();
     }
 
     @Override
     public Frame createFrame() {
-        return new PartCFrame();
+        return new TypeCFrame();
     }
 
     @Override
     public Engine createEngine() {
-        return new PartCEngine();
+        return new TypeCEngine();
     }
 
 
