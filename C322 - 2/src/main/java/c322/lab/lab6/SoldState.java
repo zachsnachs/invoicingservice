@@ -1,4 +1,4 @@
-package c322.labs.lab5;
+package c322.lab.lab6;
 
 public class SoldState implements State {
     GumballMachine gumballMachine;

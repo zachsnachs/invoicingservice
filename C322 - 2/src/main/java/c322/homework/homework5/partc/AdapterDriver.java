@@ -9,12 +9,9 @@ public class AdapterDriver {
         EstateInterface estateInterface = new Estate(300, 400);
         LotInterface estateAdapter = new EstateAdapter(estateInterface);
 
-        estateInterface.getAcreage(9000, 45000);
+     estateInterface.getAcreage(2300, 6325);
     }
-        static void testLot(LotInterface lotInterface){
-                   // Lot.setSize();
 
-    }
 
 }
 

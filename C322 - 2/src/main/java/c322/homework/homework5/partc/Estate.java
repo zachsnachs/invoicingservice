@@ -10,8 +10,12 @@ public class Estate implements EstateInterface{
     }
     @Override
     public void getAcreage(int first, int second) {
-       this.first = first / 43560;
-       this.second = second / 43560;
+       first = first;
+       second = second ;
+      // System.out.println(first );
+      // System.out.println(second );
+       System.out.println( (double) (second * first) / 43560);
+
 
     }
 

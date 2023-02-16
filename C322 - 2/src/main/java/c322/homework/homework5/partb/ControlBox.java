@@ -42,4 +42,20 @@ public class ControlBox {
         }
 
     }
+
+    public void sliderDecrease(int newSliderValue) {
+        if (newSliderValue > SLIDER_MAX || newSliderValue < SLIDER_MIN) {
+            System.out.println("The slider value is out of bounds. Try " +
+                    "a value between 0 and 100 . . .");
+        } else if (newSliderValue > sliderValue) {
+            System.out.println("You can only decrease the volume" +
+                    "with this method !");
+        } else {
+            sliderValue = newSliderValue;
+
+            System.out.println("New value set to : " + sliderValue);
+
+        }
+
+    }
 }

@@ -1,4 +1,4 @@
-package c322.labs.lab5;
+package c322.lab.lab6;
 import java.rmi.*;
 import java.rmi.server.*;
 
