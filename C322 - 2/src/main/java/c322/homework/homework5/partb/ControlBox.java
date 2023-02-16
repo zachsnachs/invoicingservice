@@ -27,7 +27,7 @@ public class ControlBox {
         }
     }
 
-    void sliderIncrease(int newSliderValue) {
+    public void sliderIncrease(int newSliderValue) {
         if (newSliderValue > SLIDER_MAX || newSliderValue < SLIDER_MIN) {
             System.out.println("The slider value is out of bounds. Try " +
                     "a value between 0 and 100 . . .");
@@ -36,7 +36,7 @@ public class ControlBox {
                     "with this method !");
         } else {
             sliderValue = newSliderValue;
-            newSliderValue = sliderValue;
+
             System.out.println("New value set to : " + sliderValue);
 
         }

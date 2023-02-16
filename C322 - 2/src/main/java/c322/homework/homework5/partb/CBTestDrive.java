@@ -7,12 +7,13 @@ public class CBTestDrive {
 
      invoker.setCommand(controlBox :: powerOn);
      invoker.executor();
+     Invoker.controlBox.sliderIncrease(50);
 
      Command setGradient = () -> {
-       ControlBox.sliderIncrease(50);
+         ControlBox.sliderIncrease(50);
+
+
      };
-
-
 
 
 
