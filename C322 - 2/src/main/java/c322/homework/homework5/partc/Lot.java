@@ -2,6 +2,10 @@ package c322.homework.homework5.partc;
 
 public class Lot implements LotInterface {
     int length, width;
+    public Lot(int lengthInput, int widthInput){
+        lengthInput = length;
+        widthInput = width;
+    }
 
     public void setSize(int length, int width) {
         this.length = length;

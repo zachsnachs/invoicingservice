@@ -5,11 +5,16 @@ public class AdapterDriver {
 
     private static DecimalFormat acreageFormat = new DecimalFormat(".##");
     public static void main(String[] args) {
-        LotInterface lotInterface = new Lot();
-        EstateInterface estateInterface = new Estate();
+        LotInterface lotInterface = new Lot(6000, 5000);
+        EstateInterface estateInterface = new Estate(300, 400);
         LotInterface estateAdapter = new EstateAdapter(estateInterface);
 
-        estateInterface.getAcreage(9000 , 45000);
+        estateInterface.getAcreage(9000, 45000);
+    }
+        static void testLot(LotInterface lotInterface){
+                   // Lot.setSize();
 
     }
+
 }
+
