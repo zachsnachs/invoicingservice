@@ -5,6 +5,6 @@ public class Printer {
     PrinterState printerOffline;
 
     public Printer(){
-        printerOnline = new PrinterOnline(this);
+        //printerOnline = new PrinterOnline(this);
     }
 }
