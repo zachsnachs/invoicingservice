@@ -67,7 +67,7 @@ public class ImageEditor {
         }
 
         public void paint(Graphics graphics) {
-            allShapes.paint(graphics);
+            allShapes.draw(graphics);
         }
     }
 }

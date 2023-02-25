@@ -23,8 +23,8 @@ public class Rectangle extends BaseShape {
     }
 
     @Override
-    public void paint(Graphics graphics) {
-        super.paint(graphics);
+    public void draw(Graphics graphics) {
+        super.draw(graphics);
         graphics.drawRect(x, y, getWidth() - 1, getHeight() - 1);
     }
 }

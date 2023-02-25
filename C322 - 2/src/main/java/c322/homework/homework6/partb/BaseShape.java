@@ -80,7 +80,7 @@ abstract class BaseShape implements Shape {
 
 
     @Override
-    public void paint(Graphics graphics) {
+    public void draw(Graphics graphics) {
         if (isSelected()) {
             enableSelectionStyle(graphics);
         }

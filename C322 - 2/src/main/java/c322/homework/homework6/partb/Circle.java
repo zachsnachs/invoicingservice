@@ -20,8 +20,8 @@ public class Circle extends BaseShape {
         return radius * 2;
     }
 
-    public void paint(Graphics graphics) {
-        super.paint(graphics);
+    public void draw(Graphics graphics) {
+        super.draw(graphics);
         graphics.drawOval(x, y, getWidth() - 1, getHeight() - 1);
     }
 }

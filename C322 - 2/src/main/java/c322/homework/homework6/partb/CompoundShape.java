@@ -125,7 +125,7 @@ public class CompoundShape extends BaseShape {
     }
 
     @Override
-    public void paint(Graphics graphics) {
+    public void draw(Graphics graphics) {
         if (isSelected()) {
             enableSelectionStyle(graphics);
             graphics.drawRect(getX() - 1, getY() - 1, getWidth() + 1, getHeight() + 1);
@@ -133,7 +133,7 @@ public class CompoundShape extends BaseShape {
         }
 
         for (Shape child : children) {
-            child.paint(graphics);
+            child.draw(graphics);
         }
     }
 }

@@ -1,6 +1,6 @@
 package c322.homework.homework6.partc;
 
-public class PrinterOnline{
+public class PrinterOnline implements PrinterState{
     Printer printer;
 
     public PrinterOnline(Printer printer){
@@ -8,4 +8,8 @@ public class PrinterOnline{
 
     }
 
+    @Override
+    public void pushPrint() {
+
+    }
 }
