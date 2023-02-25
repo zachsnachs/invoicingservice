@@ -7,6 +7,8 @@ public class Drive {
         System.out.println(printer);
 
         printer.pushPrint();
+        printer.pushPrint();
+        printer.pushPrint();
     }
 
 }

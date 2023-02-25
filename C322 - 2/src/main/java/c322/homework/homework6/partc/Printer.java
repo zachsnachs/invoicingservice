@@ -11,7 +11,7 @@ public class Printer {
     public Printer() {
         printerOnline = new PrinterOnline(this);
         printerOffline = new PrinterOffline(this);
-        state = printerOffline;
+        state = printerOnline;
     }
 
     public void pushPrint(){
