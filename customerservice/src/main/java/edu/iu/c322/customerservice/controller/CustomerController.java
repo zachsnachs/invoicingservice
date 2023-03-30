@@ -6,7 +6,6 @@ import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/customers")
@@ -24,15 +23,23 @@ public class CustomerController {
 
     @PostMapping
     public int create(@Valid @RequestBody Customer customer){
-        return repository.create(customer);
+
+        Customer newCustomer = repository.save(customer);
+
+        return newCustomer.getId();
     }
 
-    public void update(@RequestBody Customer customer, @PathVariable int id){
-        repository.update(customer, id);
+    public void update(@RequestBody Customer customer, @PathVariable int id)
+    {
+        customer.setId(id);
+        repository.save(customer);
     }
 
-    public void delete(@PathVariable int id){
-        repository.delete(id);
+    public void delete(@PathVariable int id)
+    {
+        Customer customer = new Customer();
+        customer.setId(id);
+        repository.delete(customer);
     }
 
     private CustomerRepository repository;
